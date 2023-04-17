@@ -13,11 +13,11 @@ bot = telebot.TeleBot(os.getenv("TELEGRAMBOT_API_KEY"))
 
 
 @bot.message_handler(commands=['start'])
-def send_welcome(message):
+def send_start(message):
     bot.reply_to(message, "Welcome to ChatGPT! Type anything to get started.")
 
 @bot.message_handler(commands=['hi'])
-def send_welcome(message):
+def send_hi(message):
     bot.reply_to(message, "Hi there.")
 
 @bot.message_handler(commands=['test'])
