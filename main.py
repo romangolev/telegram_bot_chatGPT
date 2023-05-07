@@ -42,4 +42,4 @@ def chat(message):
     # Send the AI's response back to the user
     bot.reply_to(message, completion.choices[0].message.content)
 
-bot.polling()
+bot.infinity_polling()
